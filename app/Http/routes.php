@@ -14,29 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-// Route::get('names/{id}', function($id) {
-//     $names = array(
-//         1 => "John",
-//         2 => "Mary",
-//         3 => "Steven"
-//     );
-//     return array($id => $names[$id]);
-// });
-Route::get('auth/login', 'Auth\AuthController@getLogin');
-Route::post('auth/login', 'Auth\AuthController@postLogin');
-Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
-Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::post('auth/register', 'Auth\AuthController@postRegister');
-
-// Route::resource('names', ['middleware' => 'auth.basic', 'NameController']);
-
-Route::get('home', function () {
-    return view('welcome');
-});
-
-Route::group(array('prefix' => 'api/v1'), function() {
+Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::get('kanto', function() {
+        App::setLocale('ja');
         return array(
             "Wakashi or Wakanago",
             "Inada",
