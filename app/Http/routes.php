@@ -28,7 +28,6 @@ App::abort(501, 'ERROR');
 
 Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::get('kanto', function() {
-        App::setLocale('ja');
         return array(
             "Wakashi or Wakanago",
             "Inada",
