@@ -75,5 +75,6 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
 });
 
 Route::group(array('prefix' => 'api/v1/name'), function() {
-
+    return array(
+    ;)
 });
