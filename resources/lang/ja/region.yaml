@@ -1,0 +1,136 @@
+"kanto":
+    ultrasmall:
+    supersmall: (wakanago)
+    small: wakashi
+    medium: inada
+    big: warasa
+    buri: buri
+    superbig:
+
+"kansai":
+    ultrasmall:
+    supersmall: (mojako)
+    supersmall: (wakana)
+    small: tsubasu
+    medium: hamachi
+    big: mejiro
+    buri: buri
+    superbig:
+
+"tohoku":
+    "1":
+        ultrasmall:
+        supersmall:
+        small: tsube
+        medium: inada
+        big: ao
+        buri: buri
+        superbig:
+    "2":
+        ultrasmall:
+        supersmall:
+        small: aokko
+        medium: shokko
+        big: warasa
+        buri: buri
+        superbig:
+
+"shimokita":
+    ultrasmall:
+    supersmall:
+    small: fukuragi
+    medium: inada
+    big: warasa
+    buri: buri
+    superbig:
+
+"hokuriku":
+    ultrasmall: tsubaeri
+    supersmall: kozukura
+    small: fukuragi
+    medium: aoburi
+    big: hanajiro
+    buri: buri
+    superbig:
+
+"toyama":
+    "1":
+        ultrasmall: tsubaiso
+        supersmall: kozukura
+        small: fukuragi
+        medium: gando
+        big:
+        buri: buri
+        superbig:
+    "2":
+        ultrasmall:
+        supersmall: kodukura
+        small: fukuragi
+        medium: gando
+        big: nimaiduru
+        buri: buri
+        superbig:
+
+"tango":
+    ultrasmall:
+    supersmall:
+    small: manriki
+    small: inada
+    medium: marugo
+    big: hamachi
+    buri: buri
+    superbig:
+
+"kishu":
+    ultrasmall:
+    supersmall: wakana
+    small: tsubasu
+    medium: inada
+    big: hamachi
+    buri: buri
+    superbig: (ouo)
+
+"sanin":
+    ultrasmall:
+    supersmall: shojigo
+    small: wakana
+    medium: mejiro
+    big: hamachi
+    buri: buri
+    superbig:
+
+"shikoku":
+    "1":
+        ultrasmall:
+        supersmall:
+        small: tsubasu
+        medium: hamachi
+        big: mejiro
+        buri: buri
+        superbig:
+    "2":
+        ultrasmall:
+        supersmall: tsubasu
+        small: tsukana
+        medium: hamachi
+        big: mejiro
+        buri: buri
+        superbig:
+
+"kyushu":
+    "1":
+        ultrasmall:
+        supersmall: wakanago
+        small: yazu
+        medium: hamachi
+        big: mejiro
+        buri: buri
+        superbig: ouo
+    "2":
+        ultrasmall:
+        supersmall: wakanago
+        small: yasu
+        medium: koburi
+        big:
+        buri: buri
+        superbig:

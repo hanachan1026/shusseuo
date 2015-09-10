@@ -1,0 +1,150 @@
+# 1 kanto
+# 2_1 kansai
+# 2_2 kansai
+# 3_1 tohoku
+# 3_2 tohoku
+# 4 shimokita
+# 5 hokuriku
+# 6_1 toyama
+# 6_2 toyama
+# 7 tango
+# 8 kishu
+# 9 sanin
+# 10_1 shikoku
+# 10_2 shikoku
+# 11_1 kyushu
+# 11_2 kyushu
+
+# ultrasmall
+"1":
+    1:
+    2_1:
+    2_2:
+    3_1:
+    3_2:
+    4:
+    5: tsubaeri
+    6_1: tsubaiso
+    6_2:
+    7_1:
+    7_2:
+    8:
+    9:
+    10_1:
+    10_2:
+    11_1:
+    11_2:
+# supersmall
+"2":
+    1: (wakanago)
+    2_1: (mojako)
+    2_2: (wakana)
+    3_1:
+    3_2:
+    4:
+    5: kozukura
+    6_1: kozukura
+    6_2: kozukura
+    7_1:
+    7_2:
+    8: wakana
+    9: shojigo
+    10_1:
+    10_2: tsubasu
+    11_1: wakanago
+    11_2: wakanago
+# small
+"3":
+    1: (wakanago)
+    2_1: tsubasu
+    2_2: tsubasu
+    3_1: tsube
+    3_2: aokko
+    4: fukuragi
+    5: fukuragi
+    6_1: fukuragi
+    6_2: fukuragi
+    7_1: manriki
+    7_2: inada
+    8: tsubasu
+    9: wakana
+    10_1: tsubasu
+    10_2: tsukana
+    11_1: yazu
+    11_2: yasu
+# medium
+"4":
+    1: inada
+    2_1: hamachi
+    2_2: hamachi
+    3_1: inada
+    3_2: shokko
+    4: inada
+    5: aoburi
+    6_1: gando
+    6_2: gando
+    7_1: marugo
+    7_2: marugo
+    8: inada
+    9: mejiro
+    10_1: hamachi
+    10_2: hamachi
+    11_1: hamachi
+    11_2: koburi
+# big
+"5":
+    1: warasa
+    2_1: mejiro
+    2_2: mejiro
+    3_1: ao
+    3_2: warasa
+    4: warasa
+    5: hanajiro
+    6_1:
+    6_2: nimaiduru
+    7_1: hamachi
+    7_2: hamachi
+    8: hamachi
+    9: hamachi
+    10_1: mejiro
+    10_2: mejiro
+    11_1: mejiro
+    11_2:
+# buri
+"6":
+    1: buri
+    2_1: buri
+    2_2: buri
+    3_1: buri
+    3_2: buri
+    4: buri
+    5: buri
+    6_1: buri
+    6_2: buri
+    7_1: buri
+    7_2: buri
+    8: buri
+    9: buri
+    10_1: buri
+    10_2: buri
+    11_1: buri
+    11_2: buri
+# superbig
+"7":
+    1:
+    2_1:
+    2_2:
+    3_1:
+    3_2:
+    4:
+    5:
+    6_1:
+    6_2:
+    7_1:
+    7_2:
+    8: (ouo)
+    9:
+    10_1:
+    10_2:
+    11_1: ouo
+    11_2:

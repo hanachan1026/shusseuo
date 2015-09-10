@@ -15,6 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+App::abort(400, 'BAD');
+App::abort(500, 'ERROR');
+// Unauthorized
+App::abort(401, 'BAD');
+// Forbidden
+App::abort(403, 'BAD');
+// Internal Server Error
+App::abort(500, 'ERROR');
+// Not implemented
+App::abort(501, 'ERROR');
+
 Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::get('kanto', function() {
         App::setLocale('ja');
@@ -25,7 +36,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
             "Buri"
         );
     });
-    Route::get('kansai', function() {
+    Route::post('kansai', function() {
         return array(
             "Wakana or Tsubasu",
             "Hamachi",
@@ -62,4 +73,8 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
             "Ouo"
         );
     });
+});
+
+Route::group(array('prefix' => 'api/v1/name'), function() {
+
 });
