@@ -15,16 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-App::abort(400, 'BAD');
-App::abort(500, 'ERROR');
-// Unauthorized
-App::abort(401, 'BAD');
-// Forbidden
-App::abort(403, 'BAD');
-// Internal Server Error
-App::abort(500, 'ERROR');
-// Not implemented
-App::abort(501, 'ERROR');
+// App::abort(400, 'BAD');
+// App::abort(500, 'ERROR');
+// // Unauthorized
+// App::abort(401, 'BAD');
+// // Forbidden
+// App::abort(403, 'BAD');
+// // Internal Server Error
+// App::abort(500, 'ERROR');
+// // Not implemented
+// App::abort(501, 'ERROR');
 
 Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::get('kanto', function() {
