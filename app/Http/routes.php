@@ -35,7 +35,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
             "Buri"
         );
     });
-    Route::get('kansai', function() {
+    Route::post('kansai', function() {
         return array(
             "Wakana or Tsubasu",
             "Hamachi",
