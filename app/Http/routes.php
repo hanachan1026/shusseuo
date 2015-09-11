@@ -36,10 +36,11 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
         );
     });
     Route::post('kansai', function() {
-        return response()
-                ->json(
-                    ['name' => 'Abigail', 'state' => 'CA']
-                );
+        return Response::download(./uo2.yaml);
+        // return response()
+        //         ->json(
+        //             ['name' => 'Abigail', 'state' => 'CA']
+        //         );
     });
     Route::get('hokuriku', function() {
         return array(
