@@ -73,7 +73,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
         );
     });
 });
-Route::post('/home', function() {
+Route::post('foo/bar', function() {
     return 'hello';
 });
 // Route::group(array('prefix' => 'api/v1/name'), function() {
