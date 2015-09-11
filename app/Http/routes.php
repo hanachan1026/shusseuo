@@ -36,6 +36,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
         );
     });
     Route::post('kansai', function() {
+        echo csrf_field();
         return Response::json(array('name' => 'Steve', 'state' => 'CA'));
         // return response()
         //         ->json(
