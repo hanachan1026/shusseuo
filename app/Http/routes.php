@@ -36,7 +36,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
         );
     });
     Route::post('kansai', function() {
-        return Response::download(./uo2.yaml);
+        return Response::json(array('name' => 'Steve', 'state' => 'CA'));
         // return response()
         //         ->json(
         //             ['name' => 'Abigail', 'state' => 'CA']
