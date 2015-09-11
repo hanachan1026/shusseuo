@@ -37,12 +37,9 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
     });
     Route::post('kansai', function() {
         return response()
-                ->json([
-                    "Wakana or Tsubasu",
-                    "Hamachi",
-                    "Mejiro or Inada",
-                    "Buri"
-                ]);
+                ->json(
+                    ['name' => 'Abigail', 'state' => 'CA']
+                );
     });
     Route::get('hokuriku', function() {
         return array(
