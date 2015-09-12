@@ -16,9 +16,27 @@ Route::get('/', function () {
 });
 
 Route::get('files', function() {
-    $dir = '.';
-    $files = Storage::files($dir);
-    return $files;
+    $path = base_path();
+    // var_dump($path);
+    // $files = Storage::files($path);
+    // var_dump($files);
+    // return $files;
+    if ($handle = opendir($path)) {
+        echo "Directory handle: $handle\n";
+        echo "Files:\n";
+        $a = file_exists("../locale.yaml");
+        echo "$a";
+        while (false !== ($file = readdir($handle))) {
+            echo "$file\n";
+            if ($file == "locale.yaml") {
+                echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+                $fp = fopen("$path/$file", "r");
+                while ($line = fgets($fp)) {
+                    echo "<br />$line<br />";
+                }
+            };
+        }
+    }
 });
 
 // App::abort(400, 'BAD');
