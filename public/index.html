@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript"
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            /*$.post(url,data,function(data){
+                console.log(data)
+            })*/
+            $.post  ('localhost:8000/api/v1/place/lookup',{},function(json){
+                alert(json);
+            });
+        });
+    </script>
+</head>
+<body>
+	<h1>imdex</h1>
+</body>
+</html>
+

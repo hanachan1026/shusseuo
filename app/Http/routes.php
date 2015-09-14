@@ -1,5 +1,6 @@
 <?php
 
+use Symfony\Component\Yaml\Yaml;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -17,27 +18,66 @@ Route::get('/', function () {
 
 Route::get('files', function() {
     $path = base_path();
-    // var_dump($path);
-    // $files = Storage::files($path);
-    // var_dump($files);
-    // return $files;
     if ($handle = opendir($path)) {
-        echo "Directory handle: $handle\n";
-        echo "Files:\n";
-        $a = file_exists("../locale.yaml");
-        echo "$a";
+        // echo "Directory handle: $handle\n";
+        // echo "Files:\n";
         while (false !== ($file = readdir($handle))) {
-            echo "$file\n";
-            if ($file == "locale.yaml") {
-                echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
-                $fp = fopen("$path/$file", "r");
-                while ($line = fgets($fp)) {
-                    echo "<br />$line<br />";
-                }
-            };
+            // echo "$file\n";
+            foo("locale.yaml", $file, $path);
+            foo("size.yaml", $file, $path);
+            foo("uo2.yaml", $file, $path);
         }
     }
 });
+
+function foo($f, $file, $path) {
+    if ($file == "$f") {
+        echo "!!!!!!!!!";
+        $fp = fopen("$path/$file", "r");
+        while ($line = fgets($fp)) {
+            echo "<br />$line<br />";
+        }
+    }
+};
+
+Route::group(array('prefix' => 'api/v1/place'), function() {
+    Route::post('lookup', function() {
+        $path = base_path();
+        $data = file_get_contents("$path/locale.yaml");
+        $yaml = Yaml::parse($data);
+//        while($yaml) {
+//            echo $yaml;
+//        }
+       // return $data;
+        return json_encode($yaml);
+    });
+});
+
+Route::group(array('prefix' => 'api/v1/size'), function() {
+    Route::post('lookup', function() {
+        $path = base_path();
+        $data = file_get_contents("$path/size.yaml");
+        $data = json_encode("$data");
+        return $data;
+    });
+});
+
+Route::group(array('prefix' => 'api/v1/uo'), function() {
+    Route::post('lookup', function() {
+        $path = base_path();
+        $data = file_get_contents("$path/uo2.yaml");
+        $data = json_encode("$data");
+        return $data;
+    });
+});
+
+// Route::post('kansai', function() {
+//     return Response::json(array('name' => 'Steve', 'state' => 'CA'));
+// });
+
+// Route::get('getparameter', function() {
+    //     echo 'Hello ' . htmlspecialchars($_GET["name"]);
+    // });
 
 // App::abort(400, 'BAD');
 // App::abort(500, 'ERROR');
@@ -49,60 +89,3 @@ Route::get('files', function() {
 // App::abort(500, 'ERROR');
 // // Not implemented
 // App::abort(501, 'ERROR');
-
-// Route::group(array('prefix' => 'api/v1/place'), function() {
-//     Route::get('kanto', function() {
-//         return array(
-//             "Wakashi or Wakanago",
-//             "Inada",
-//             "Warasa",
-//             "Buri"
-//         );
-//     });
-//     Route::post('kansai', function() {
-//         echo csrf_field();
-//         return Response::json(array('name' => 'Steve', 'state' => 'CA'));
-//         // return response()
-//         //         ->json(
-//         //             ['name' => 'Abigail', 'state' => 'CA']
-//         //         );
-//     });
-//     Route::get('hokuriku', function() {
-//         return array(
-//             "Tsubaeri",
-//             "Kozukura",
-//             "Fukuragi",
-//             "Aoburi",
-//             "Hanajiro",
-//             "Buri"
-//         );
-//     });
-//     Route::get('sanin', function() {
-//         return array(
-//             "Shojigo",
-//             "Wakana",
-//             "Mejiro",
-//             "Hamachi",
-//             "Buri"
-//         );
-//     });
-//     Route::get('kyushu', function() {
-//         return array(
-//             "Wakanago",
-//             "Yazu",
-//             "Hamachi",
-//             "Mejiro",
-//             "Buri",
-//             "Ouo"
-//         );
-//     });
-// });
-// Route::post('foo/bar', function() {
-//     return 'hello';
-// });
-// Route::group(array('prefix' => 'api/v1/name'), function() {
-//     return array(
-//         "1",
-//         "2"
-//     );
-// });
