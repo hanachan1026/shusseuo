@@ -16,6 +16,8 @@ define('LARAVEL_START', microtime(true));
 
 require __DIR__.'/../vendor/autoload.php';
 
+use Symfony\Component\Yaml\Parser;
+
 /*
 |--------------------------------------------------------------------------
 | Include The Compiled Class File
