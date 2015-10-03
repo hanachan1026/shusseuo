@@ -44,7 +44,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::post('lookup', function() {
         $path = base_path();
         $data = file_get_contents("$path/locale.yaml");
-        $yaml = Yaml::parse($data);
+        $yaml = YAML::parse($data);
 //        while($yaml) {
 //            echo $yaml;
 //        }
