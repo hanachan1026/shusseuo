@@ -1,6 +1,5 @@
 <?php
 
-use Symfony\Component\Yaml\Yaml;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,6 +10,8 @@ use Symfony\Component\Yaml\Yaml;
 | and give it the controller to call when that URI is requested.
 |
 */
+
+use Symfony\Component\Yaml\Parser;
 
 Route::get('/', function () {
     return view('welcome');
@@ -44,7 +45,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::post('lookup', function() {
         $path = base_path();
         $data = file_get_contents("$path/locale.yaml");
-        $yaml = Yaml::parse($data);
+        $yaml = Parser::parse($data);
 //        while($yaml)git  {
 //            echo $yaml;
 //        }
