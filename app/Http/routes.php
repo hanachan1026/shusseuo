@@ -11,7 +11,8 @@
 |
 */
 
-use Symfony\Component\Yaml\Parser;
+
+use Symfony\Component\Yaml\Yaml;
 
 Route::get('/', function () {
     return view('welcome');
@@ -45,7 +46,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::post('lookup', function() {
         $path = base_path();
         $data = file_get_contents("$path/locale.yaml");
-        $yaml = Parser::parse($data);
+        $yaml = Yaml::parse($data);
 //        while($yaml)git  {
 //            echo $yaml;
 //        }
