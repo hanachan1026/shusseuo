@@ -56,10 +56,7 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
     });
     Route::post('kansai', function() {
         $path = base_path();
-        $data = file_get_contents("$path/uo/kansai1_uo.yaml");
-        $yaml = Yaml::parse($data);
-        return json_encode($yaml);
-        $data = file_get_contents("$path/uo/kansai2_uo.yaml");
+        $data = file_get_contents("$path/uo/kansai_uo.yaml");
         $yaml = Yaml::parse($data);
         return json_encode($yaml);
     });
