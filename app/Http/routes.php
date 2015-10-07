@@ -58,7 +58,8 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
         $path = base_path();
         $data = file_get_contents("$path/uo/kansai_uo.yaml");
         $yaml = Yaml::parse($data);
-        return json_encode($yaml);
+        //return json_encode($yaml);
+        return $yaml;
     });
     Route::post('tohoku', function() {
 
