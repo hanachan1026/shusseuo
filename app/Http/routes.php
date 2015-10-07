@@ -49,6 +49,45 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
         return json_encode($yaml);
     });
     Route::post('kanto', function() {
+        $path = base_path();
+        $data = file_get_contents("$path/uo/kanto_uo.yaml");
+        $yaml = Yaml::parse($data);
+        return json_encode($yaml);
+    });
+    Route::post('kansai', function() {
+        $path = base_path();
+        $data = file_get_contents("$path/uo/kansai1_uo.yaml");
+        $yaml = Yaml::parse($data);
+        return json_encode($yaml);
+        $data = file_get_contents("$path/uo/kansai2_uo.yaml");
+        $yaml = Yaml::parse($data);
+        return json_encode($yaml);
+    });
+    Route::post('tohoku', function() {
+
+    });
+    Route::post('shimokita', function() {
+
+    });
+    Route::post('hokuriku', function() {
+
+    });
+    Route::post('toyama', function() {
+
+    });
+    Route::post('tango', function() {
+
+    });
+    Route::post('kishu', function() {
+
+    });
+    Route::post('sanin', function() {
+
+    });
+    Route::post('shikoku', function() {
+
+    });
+    Route::post('kyushu', function() {
 
     });
 });
