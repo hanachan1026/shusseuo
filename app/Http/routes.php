@@ -41,10 +41,9 @@ function foo($f, $file, $path) {
         }
     }
 };
-$path = base_path();
 Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::post('lookup', function() {
-
+        $path = base_path();
         $data = file_get_contents("$path/locale.yaml");
         $yaml = Yaml::parse($data);
         return json_encode($yaml);
