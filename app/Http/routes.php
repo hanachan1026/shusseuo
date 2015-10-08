@@ -41,6 +41,27 @@ function foo($f, $file, $path) {
         }
     }
 };
+
+function parseYaml($hoge)
+{
+    $index = 1;
+    $getContentsIfExists = function ($index,$hoge) {
+        $path = base_path() . $hoge . $index . ".yaml";
+        if (file_exists($path)) {
+            return file_get_contents($path);
+        } else {
+            return false;
+        }
+    };
+
+    $yaml = [];
+    while($data = $getContentsIfExists($index,$hoge)){
+        $yaml[] = Yaml::parse($data);
+        $index++;
+    }
+
+    return $yaml;
+};
 Route::group(array('prefix' => 'api/v1/place'), function() {
     Route::post('lookup', function() {
         $path = base_path();
@@ -49,44 +70,49 @@ Route::group(array('prefix' => 'api/v1/place'), function() {
         return json_encode($yaml);
     });
     Route::post('kanto', function() {
-        $path = base_path();
-        $data = file_get_contents("$path/uo/kanto_uo.yaml");
-        $yaml = Yaml::parse($data);
+        $yaml = parseYaml("/uo/kanto_uo");
         return json_encode($yaml);
     });
+
     Route::post('kansai', function() {
-        $path = base_path();
-        $data = file_get_contents("$path/uo/kansai_uo.yaml");
-        $yaml = Yaml::parse($data);
-        //return json_encode($yaml);
-        return $yaml;
+        $yaml = parseYaml("/uo/kansai_uo");
+        return json_encode($yaml);
     });
     Route::post('tohoku', function() {
-
+        $yaml = parseYaml("/uo/tohoku_uo");
+        return json_encode($yaml);
     });
     Route::post('shimokita', function() {
-
+        $yaml = parseYaml("/uo/shimokita_uo");
+        return json_encode($yaml);
     });
     Route::post('hokuriku', function() {
-
+        $yaml = parseYaml("/uo/hokuriku_uo");
+        return json_encode($yaml);
     });
     Route::post('toyama', function() {
-
+        $yaml = parseYaml("/uo/toyama_uo");
+        return json_encode($yaml);
     });
     Route::post('tango', function() {
-
+        $yaml = parseYaml("/uo/tango_uo");
+        return json_encode($yaml);
     });
     Route::post('kishu', function() {
-
+        $yaml = parseYaml("/uo/kishu_uo");
+        return json_encode($yaml);
     });
     Route::post('sanin', function() {
-
+        $yaml = parseYaml("/uo/sanin_uo");
+        return json_encode($yaml);
     });
     Route::post('shikoku', function() {
-
+        $yaml = parseYaml("/uo/shikoku_uo");
+        return json_encode($yaml);
     });
     Route::post('kyushu', function() {
-
+        $yaml = parseYaml("/uo/kyushu_uo");
+        return json_encode($yaml);
     });
 });
 
