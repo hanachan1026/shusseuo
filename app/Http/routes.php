@@ -18,6 +18,7 @@ use Symfony\Component\Yaml\Yaml;
 Route::get('/', 'WelcomeController@index');
 Route::get('/apiClientPage', 'WelcomeController@apiClientPage');
 
+
 function parseYaml($hoge)
 {
     $index = 1;

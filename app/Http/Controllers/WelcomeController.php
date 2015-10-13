@@ -89,35 +89,35 @@ class WelcomeController extends Controller
         return view('apiClientPage');
     }
 
-    public function getSearch()
-    {
-//        $query = Request::get('q');
-//        $base_url = 'localhost:8000';
-//        $header = [
-//            'Content-Type: application/json'
-//        ];
-//        $view = null;
-//        if($query == "kansai") {
-//            $curl = curl_init();
-//            curl_setopt($curl, CURLOPT_URL, $base_url.'api/v1/place/kansai');
-//            curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
-//            curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
-//            curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
-//            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-//            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-//            curl_setopt($curl, CURLOPT_HEADER, true);
+//    public function hello()
+//    {
+////        $query = Request::get('q');
+////        $base_url = 'localhost:8000';
+////        $header = [
+////            'Content-Type: application/json'
+////        ];
+////        $view = null;
+////        if($query == "kansai") {
+////            $curl = curl_init();
+////            curl_setopt($curl, CURLOPT_URL, $base_url.'api/v1/place/kansai');
+////            curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
+////            curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
+////            curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
+////            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+////            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+////            curl_setopt($curl, CURLOPT_HEADER, true);
+////
+////            $response = curl_exec($curl);
+////
+////            $header_size = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
+////            $header = substr($response, 0, $header_size);
+////            $body = substr($response, $header_size);
+////            $result = json_decode($body, true);
+////            curl_close($curl);
+////            $url = "localhost:8000/api/v1/place/kansai";
+////            $view = view('result');
+////        }
 //
-//            $response = curl_exec($curl);
-//
-//            $header_size = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
-//            $header = substr($response, 0, $header_size);
-//            $body = substr($response, $header_size);
-//            $result = json_decode($body, true);
-//            curl_close($curl);
-//            $url = "localhost:8000/api/v1/place/kansai";
-//            $view = view('result');
-//        }
-
-        return "hello";
-    }
+//        return "hello";
+//    }
 }
