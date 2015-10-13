@@ -12,35 +12,11 @@
 */
 
 
+use App\Http\Controllers\WelcomeController;
 use Symfony\Component\Yaml\Yaml;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('files', function() {
-    $path = base_path();
-    if ($handle = opendir($path)) {
-        // echo "Directory handle: $handle\n";
-        // echo "Files:\n";
-        while (false !== ($file = readdir($handle))) {
-            // echo "$file\n";
-            foo("locale.yaml", $file, $path);
-            foo("size.yaml", $file, $path);
-            foo("uo2.yaml", $file, $path);
-        }
-    }
-});
-
-function foo($f, $file, $path) {
-    if ($file == "$f") {
-        echo "!!!!!!!!!";
-        $fp = fopen("$path/$file", "r");
-        while ($line = fgets($fp)) {
-            echo "<br />$line<br />";
-        }
-    }
-};
+Route::get('/', 'WelcomeController@index');
+Route::get('/apiClientPage', 'WelcomeController@apiClientPage');
 
 function parseYaml($hoge)
 {
@@ -133,14 +109,6 @@ Route::group(array('prefix' => 'api/v1/uo'), function() {
         return $data;
     });
 });
-
-// Route::post('kansai', function() {
-//     return Response::json(array('name' => 'Steve', 'state' => 'CA'));
-// });
-
-// Route::get('getparameter', function() {
-    //     echo 'Hello ' . htmlspecialchars($_GET["name"]);
-    // });
 
 // App::abort(400, 'BAD');
 // App::abort(500, 'ERROR');
