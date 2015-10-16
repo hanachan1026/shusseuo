@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\View;
 
 class WelcomeController extends Controller
 {
@@ -84,9 +85,20 @@ class WelcomeController extends Controller
         //
     }
 
+    public function api()
+    {
+//        return response()->json(['name' => 'Abigail', 'state' => 'CA']);
+        return redirect('apiClientPage');
+    }
+
     public function apiClientPage()
     {
         return view('apiClientPage');
+    }
+
+    public function results()
+    {
+        return view('results');
     }
 
 //    public function hello()
