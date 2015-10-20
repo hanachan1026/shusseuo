@@ -18,7 +18,7 @@ use Symfony\Component\Yaml\Yaml;
 Route::get('/', 'WelcomeController@index');
 Route::get('/apiClientPage', 'WelcomeController@apiClientPage');
 //Route::get('/apiClientPage', 'WelcomeController@api');
-
+Route::get('/results', 'WelcomeController@results');
 
 function parseYaml($hoge)
 {
@@ -34,7 +34,7 @@ function parseYaml($hoge)
 
     $yaml = [];
     while($data = $getContentsIfExists($index,$hoge)){
-        $yaml[] = Yaml::parse($data);
+        $yaml[] = (object) array('promotionList' => Yaml::parse($data));
         $index++;
     }
 

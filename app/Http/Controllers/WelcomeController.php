@@ -98,7 +98,9 @@ class WelcomeController extends Controller
 
     public function results()
     {
-        return view('results');
+//        return view('results');
+        $uo =
+        return response()->json(['name' => 'Abigail', 'state' => 'CA']);
     }
 
 //    public function hello()
