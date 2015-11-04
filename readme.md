@@ -1,7 +1,7 @@
 ## 出世魚を地域ごとに検索できるAPIのリポジトリです。
 
 https://shusse-uo.herokuapp.com/api/v1/(地域名)
-にpostでアクセスするとその地域の出世魚の成長過程の名前がjsonデータで返されます。
+にpostでアクセスするとその地域の出世魚の成長過程の名前がjsonデータで返されます
 地域名一覧
 hokuriku(北陸)
 kansai(関西)
