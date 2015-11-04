@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ce8b017-23e1-4bdb-8fe3-0f9c0a8b45e9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/hokuriku_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/kansai_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/kanto_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/kishu_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/kyushu_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/sanin_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/shikoku_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/shimokita_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/tango_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/tohoku_uo1.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uo/toyama_uo1.yaml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/apiClientPage.blade.php" afterPath="$PROJECT_DIR$/resources/views/apiClientPage.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/hokuriku_uo1.yaml" afterPath="$PROJECT_DIR$/uo/hokuriku_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/kansai_uo1.yaml" afterPath="$PROJECT_DIR$/uo/kansai_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/kansai_uo2.yaml" afterPath="$PROJECT_DIR$/uo/kansai_uo2.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/kanto_uo1.yaml" afterPath="$PROJECT_DIR$/uo/kanto_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/kishu_uo1.yaml" afterPath="$PROJECT_DIR$/uo/kishu_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/kyushu_uo1.yaml" afterPath="$PROJECT_DIR$/uo/kyushu_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/kyushu_uo2.yaml" afterPath="$PROJECT_DIR$/uo/kyushu_uo2.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/sanin_uo1.yaml" afterPath="$PROJECT_DIR$/uo/sanin_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/shikoku_uo1.yaml" afterPath="$PROJECT_DIR$/uo/shikoku_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/shikoku_uo2.yaml" afterPath="$PROJECT_DIR$/uo/shikoku_uo2.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/shimokita_uo1.yaml" afterPath="$PROJECT_DIR$/uo/shimokita_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/tango_uo1.yaml" afterPath="$PROJECT_DIR$/uo/tango_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/tango_uo2.yaml" afterPath="$PROJECT_DIR$/uo/tango_uo2.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/tohoku_uo1.yaml" afterPath="$PROJECT_DIR$/uo/tohoku_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/tohoku_uo2.yaml" afterPath="$PROJECT_DIR$/uo/tohoku_uo2.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/toyama_uo1.yaml" afterPath="$PROJECT_DIR$/uo/toyama_uo1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uo/toyama_uo2.yaml" afterPath="$PROJECT_DIR$/uo/toyama_uo2.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shusse-uo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10204082">
-              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+            <state vertical-scroll-proportion="-27.5">
+              <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
               <folding>
                 <element signature="e#395#438#0#PHP" expanded="true" />
               </folding>
@@ -65,14 +58,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiClientPage.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="apiClientPage.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/apiClientPage.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-99.375">
-              <caret line="159" column="63" selection-start-line="159" selection-start-column="63" selection-end-line="159" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.53061223">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#small#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +90,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/results.blade.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-        <option value="$PROJECT_DIR$/resources/views/apiClientPage.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/apiClientPage.blade.php" />
       </list>
     </option>
   </component>
@@ -395,6 +389,7 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -447,6 +442,7 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -491,6 +487,7 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uo/kansai_uo1.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uo/kansai_uo2.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07926024">
@@ -747,14 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uo/tango_uo1.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/apiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06122449">
@@ -763,13 +745,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/apiClientPage.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-99.375">
-          <caret line="159" column="63" selection-start-line="159" selection-start-column="63" selection-end-line="159" selection-end-column="63" />
+        <state vertical-scroll-proportion="-27.5">
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#395#438#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -782,12 +763,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/apiClientPage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10204082">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.53061223">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding>
-            <element signature="e#395#438#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

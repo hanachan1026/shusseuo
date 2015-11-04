@@ -19,7 +19,6 @@ use Symfony\Component\Yaml\Yaml;
 
 Route::get('/', 'WelcomeController@index');
 Route::get('/apiClientPage', 'WelcomeController@apiClientPage');
-//Route::get('/apiClientPage', 'WelcomeController@api');
 Route::get('/results', 'WelcomeController@results');
 
 function parseYaml($hoge)
@@ -41,9 +40,8 @@ function parseYaml($hoge)
     }
 
     return $yaml;
-}
+};
 
-;
 Route::group(['prefix' => 'api/v1/place'], function () {
     Route::post('lookup', function () {
         $path = base_path();
@@ -52,48 +50,48 @@ Route::group(['prefix' => 'api/v1/place'], function () {
         return json_encode($yaml);
     });
     Route::post('kanto', function () {
-        $yaml = parseYaml("/uo/kanto_uo");
+        $yaml = parseYaml("/resources/lang/kanto/kanto_uo");
         return json_encode($yaml);
     });
 
     Route::post('kansai', function () {
-        $yaml = parseYaml("/uo/kansai_uo");
+        $yaml = parseYaml("/resources/lang/kansai/kansai_uo");
         return json_encode($yaml);
     });
     Route::post('tohoku', function () {
-        $yaml = parseYaml("/uo/tohoku_uo");
+        $yaml = parseYaml("/resources/lang/tohoku/tohoku_uo");
         return json_encode($yaml);
     });
     Route::post('shimokita', function () {
-        $yaml = parseYaml("/uo/shimokita_uo");
+        $yaml = parseYaml("/resources/lang/shimokita/shimokita_uo");
         return json_encode($yaml);
     });
     Route::post('hokuriku', function () {
-        $yaml = parseYaml("/uo/hokuriku_uo");
+        $yaml = parseYaml("/resources/lang/hokuriku/hokuriku_uo");
         return json_encode($yaml);
     });
     Route::post('toyama', function () {
-        $yaml = parseYaml("/uo/toyama_uo");
+        $yaml = parseYaml("/resources/lang/toyama/toyama_uo");
         return json_encode($yaml);
     });
     Route::post('tango', function () {
-        $yaml = parseYaml("/uo/tango_uo");
+        $yaml = parseYaml("/resources/lang/tango/tango_uo");
         return json_encode($yaml);
     });
     Route::post('kishu', function () {
-        $yaml = parseYaml("/uo/kishu_uo");
+        $yaml = parseYaml("/resources/lang/kishu/kishu_uo");
         return json_encode($yaml);
     });
     Route::post('sanin', function () {
-        $yaml = parseYaml("/uo/sanin_uo");
+        $yaml = parseYaml("/resources/lang/sanin/sanin_uo");
         return json_encode($yaml);
     });
     Route::post('shikoku', function () {
-        $yaml = parseYaml("/uo/shikoku_uo");
+        $yaml = parseYaml("/resources/lang/shikoku/shikoku_uo");
         return json_encode($yaml);
     });
     Route::post('kyushu', function () {
-        $yaml = parseYaml("/uo/kyushu_uo");
+        $yaml = parseYaml("/resources/lang/kyushu/kyushu_uo");
         return json_encode($yaml);
     });
 });
