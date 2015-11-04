@@ -1,3 +1,20 @@
+## 出世魚を地域ごとに検索できるAPIのリポジトリです。
+
+https://shusse-uo.herokuapp.com/api/v1/(地域名)
+にpostでアクセスするとその地域の出世魚の成長過程の名前がjsonデータで返されます
+地域名一覧
+hokuriku(北陸)
+kansai(関西)
+kanto(関東)
+kishu(紀州)
+kyushu(九州)
+sanin(山陰)
+shikoku(四国)
+shimokita(下北)
+tango(丹後)
+tohoku(東北)
+toyama(富山)
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
